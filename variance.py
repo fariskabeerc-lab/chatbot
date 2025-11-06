@@ -11,9 +11,9 @@ st.title("📦 Stock Comparison Chatbot")
 # --- Load and cache Excel data ---
 @st.cache_data
 def load_excel_data():
-    df1 = pd.read_excel("data/SAM_Stock Comparison.Xlsx")
-    df2 = pd.read_excel("data/SAO_Stock Comparison.Xlsx")
-    df3 = pd.read_excel("data/SBM_Stock Comparison.Xlsx")
+    df1 = pd.read_excel("SAM_Stock Comparison.Xlsx")
+    df2 = pd.read_excel("SAO_Stock Comparison.Xlsx")
+    df3 = pd.read_excel("SBM_Stock Comparison.Xlsx")
     df = pd.concat([df1, df2, df3], ignore_index=True)
     
     # Calculate totals automatically
